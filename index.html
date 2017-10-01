@@ -3,10 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <script src="bower_components/aframe.min.js"></script>
-
-    <script src="bower_components/aframe-look-at-component.min.js"></script>
-    <script src="bower_components/Keypress/keypress.js"></script>
-    <script src="bower_components/fetch/fetch.js"></script>
     <title>GL VR</title>
 </head>
 <body>
@@ -23,9 +19,7 @@
             <video id="vid5" autoplay loop="true" src="videos/cara5.mp4"  crossorigin="anonymous"></video>-->
             <video id="vid6" autoplay loop="true" src="videos/cara6.mp4"  crossorigin="anonymous"></video>
         </a-assets>
-        <a-sky src="#sky" rotation="0 -90 0"></a-sky>
         <a-camera id="human-camera" position="0 16 0" wasd-controls active="true" fov="70">
-            <a-entity cursor="fuse: true; maxDistance: 50; timeout: 500" position="0 0 -2" geometry="primitive: plane; height: .05; width: .05"  material="color: #fff"></a-entity>
         </a-camera>
         <a-entity id="vd">
             <a-video src="#vid6" width="32" height="32" position="0 0 0" rotation="90 0 0" ></a-video>
