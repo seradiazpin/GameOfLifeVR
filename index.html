@@ -28,29 +28,28 @@
             <video id="vid3" autoplay loop="true" src="videos/cara3.mp4"  crossorigin="anonymous"></video>
             <video id="vid4" autoplay loop="true" src="videos/cara4.mp4"  crossorigin="anonymous"></video>
             <video id="vid5" autoplay loop="true" src="videos/cara5.mp4"  crossorigin="anonymous"></video>-->
-            <video id="vid6"  loop="true" src="videos/cara6.mp4" autoplay="false"
-                   style="display: none" crossorigin="anonymous"></video>
+            <video id="vid6" src="videos/cara6.mp4"
+                   crossOrigin="anonymous"
+                   autoplay="false"
+                   loop="true"
+                   style="display: none"></video>
         </a-assets>
         <a-camera id="human-camera" position="0 4 0" wasd-controls active="true" fov="70">
         </a-camera>
         <a-entity id="vd">
-            <a-video src="#vid6" id="vid1" width="10" height="10" position="0 0 0" rotation="90 0 0" ></a-video>
-            <a-video src="#vid6" id="vid2" width="10" height="10" position="0 10 0" rotation="90 0 0" ></a-video>
-            <a-video src="#vid6" id="vid3" width="10" height="10" position="0 5 2.80" rotation="0 0 0" ></a-video>
-            <a-video src="#vid6" id="vid4" width="10" height="10" position="2.80 5 0" rotation="0 90 0" ></a-video>
-            <a-video src="#vid6" id="vid5" width="10" height="10" position="-2.80 5 0" rotation="0 90 0" ></a-video>
-            <a-video src="#vid6" id="vid6" width="10" height="10" position="0 5 -2.80" rotation="0 0 0" ></a-video>
+            <a-video src="#vid6"  width="10" height="10" position="0 0 0" rotation="90 0 0" ></a-video>
+            <a-video src="#vid6"  width="10" height="10" position="0 10 0" rotation="90 0 0" ></a-video>
+            <a-video src="#vid6"  width="10" height="10" position="0 5 2.80" rotation="0 0 0" ></a-video>
+            <a-video src="#vid6" width="10" height="10" position="2.80 5 0" rotation="0 90 0" ></a-video>
+            <a-video src="#vid6"  width="10" height="10" position="-2.80 5 0" rotation="0 90 0" ></a-video>
+            <a-video src="#vid6" width="10" height="10" position="0 5 -2.80" rotation="0 0 0" ></a-video>
         </a-entity>
     </a-scene>
 <script>
+    var vid = document.getElementById('vid6');
     document.getElementById('play-button').addEventListener("click", function(e){
         this.style.display = 'none';
-        vid1.play();
-        vid2.play();
-        vid3.play();
-        vid4.play();
-        vid5.play();
-        vid6.play();
+        vid.play();
     }, false);
 
 </script>
